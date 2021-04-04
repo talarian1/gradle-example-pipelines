@@ -38,7 +38,7 @@ pipelines:
         $int_rt_RobiNino_gradle_example_pipelines_integration_apikey --enc-password=false
       - jfrog rt gradle-config --server-id-resolve RobiNino_gradle_example_pipelines_serverId
         --repo-resolve gradle-virtual
-      - jfrog rt gradle clean build
+      - jfrog rt gradle clean artifactoryPublish
       - jfrog rt bag
       - jfrog rt bce
       - jfrog rt bp
